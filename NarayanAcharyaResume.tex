@@ -15,6 +15,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{ragged2e}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -37,23 +38,23 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-3pt}\scshape\raggedright\large
+	\vspace{-3pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+	\item\normalsize{
+		\textbf{#1}{: #2}
+	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-4pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -61,129 +62,132 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
-
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://narayanacharya.com/}{\Large Narayan Acharya}} & \href{mailto:narayan.acharya@stonybrook.edu}{narayan.acharya@stonybrook.edu}\\
-  \href{https://narayanacharya.com/}{https://narayanacharya.com/} & +1-631-307-6395 \\
-\end{tabular*}
-
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {State University of New York}{Stony Brook, NY}
-      {Master of Science in Computer Science (Data Science, Computer Vision, NLP, Algorithms)}{Aug 2019 -- Present}
-    \resumeSubheading
-      {KJ Somaiya College of Engineering (KJSCE), University of Mumbai}{Mumbai, India}
-      {Bachelor of Engineering in Information Technology; Agg: 72.9\%}{Aug 2011 -- May 2015}
-  \resumeSubHeadingListEnd
-
-
-%-----------PREOFESSIONAL EXPERIENCE-----------------
-\section{Professional Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {JP Morgan Chase \& Co.}{Mumbai, India}
-      {Application Developer/Associate}{May 2017 - Jul 2019}
-      \resumeItemListStart
-        \resumeItem{Migration to Web UI (REST/WebSockets)}
-          {Re-architected server-side services to support web-based user interface clients using messaging and streaming architectures for real time data with proxy/ gateway service to route requests from authenticated and authorized users to services in a loadbalanced manner.}
-        \resumeItem{Latency Monitoring}
-          {Developed non-intrusive ways to gather, store(Elastic), visualise(Kibana) and analyse metrics for latency across services to understand possible bottlenecks and performance improvement options.}
-        \resumeItem{Compliance Reporting}
-          {Collected data to track and compare client portfolio, trading and leverage, pre and post-trade, for reporting to compliance teams.}
-		\resumeItem{Database Integration Framework}
-		  {Designed and built a generic framework to make database integration and migration to new database technologies.}
-		\resumeItem{Automated Performance Testing}
-          {Set up and implemented automated performance testing process. This was originally done manually by the development team prior to each release but now can be done as and when required.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {LiveFiesta Pvt. Ltd.}{Mumbai, India}
-      {Lead Android Developer}{Jun 2016 - Jan 2017}
-      \resumeItemListStart
-        \resumeItem{Consumer Application}
-          {Designed and developed Android application for customers to book tickets to various events across the country. Technical features included payment gateway integration, push notifications, deep linking, Google Analytics. Leveraged MVP Architecture pattern along with design principles like single responsibility, dependency injection and others for clean, testable and maintainable code.}
-        \resumeItem{Consumer Application Design}
-          {Designed initial version of the Android application based on extensive research on UI/UX principles, color strategies, iconography and typography.}
-        \resumeItem{Ticket Delivery Tracker}
-          {Built utility application for in-house use that tracked delivery of physical tickets to customers. This application helped delivery personnel with logistics through Google Maps integration and business personnel with auditing of physical tickets. }
-        \resumeItem{Event Entry Tracker}
-          {Developed utility application that redeemed physical/digital tickets for convenient one-time entry to customers. This app reduced entry time, shortened queue lengths and led to cutting losses that occurred due to ticket duplication and untracked re-entrants.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {TechGenium}{Mumbai, India}
-      {Software Developer \& Partner}{Jun 2015 and May 2016}
-      
-      \vspace{2mm}
-      Developed mobile and web products addressing specific needs and problems of small and medium scale businesses. Undertook project management responsibilities that included tasks like requirements analysis, project draft and proposal and tracking project timelines and deadlines. Actively involved in team building, interviewing candidates for design and technology roles and training new hires and mentoring interns.
-
-  \resumeSubHeadingListEnd
-  
-%-----------TECHNING EXPERIENCE-----------------
-\section{Teaching Experience}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Department of Information Technology, KJSCE}{Mumbai, India}
-{Seminar on 'Introduction to Spring Framework'}{Mar 2019}
-\resumeSubheading
-{Riidl (Research Innovation Incubation Design Labs)}{Mumbai, India}
-{Android App Development Course in collaboration with Riidl}{Jul 2015 -- Aug 2015}
-\resumeSubheading
-{Department of Information Technology, KJSCE}{Mumbai, India}
-{Lectures for course 'Open Source Mobile Programming: Android'}{Oct 2014}
-\resumeSubheading
-{Computer Society of India, KJSCE}{Mumbai, India}
-{Technical workshops on Open Source OS (Ubuntu), Android \& Web Development}{Aug 2013 -- Jun 2014}
-\resumeSubHeadingListEnd
-
-
-
-
-%-----------PROJECTS AND ACHIEVEMENTS-----------------
-\section{Projects \& Achievements}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Physual (Capstone Project)}
-      {Application gave insights into generating a 3D scene for visualising Newtonian Mechanics Problems using NLP. Came in 3rd in state level competition Prakalpa 2015 and 2nd in Tatva (2015) for presenting associated research paper.}
-    \resumeSubItem{Smart Home Solution}
-      {Android application to control electrical appliances remotely over the internet. Project was done in collaboration with students from Electronics department. Received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
-    \resumeSubItem{HoldingWilley (iOS App)}
-      { Developed an iOS app for Kustard Technologies Pvt. Ltd. The app fetches real time scores for cricket matches around the globe and shows ball by ball updates, full score card and match commentary.}
-    \resumeSubItem{GATE}
-      {Stood 923rd (top 1\%) in national level exam, Graduate Aptitude Test in Engineering (2015), among more than 115,000 students for the Computer Science paper.}
-    \resumeSubItem{Academic Excellence}
-	  {Among top 10 students in department during undergrad and subject topper for courses 'Programming for Mobile \& Remote Computers', 'Object Oriented Analysis \& Design' \&  'Simulation \& Modeling'.}
-    \resumeSubItem{Extra-Curricular Activities}
-      {Served as Joint General Secretary for Computer Society of India, KJSCE (2013-14) and was responsible for organizing and delivering workshops and events for students.}
-  \resumeSubHeadingListEnd
-
-
-%--------PROGRAMMING SKILLS------------
-\section{Technical Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Programming Languages}{: Proficient in Java \& Python. Experience with Swift, C, C++, C\#.}}
-  \vspace{-8pt}
+	
+	%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\href{https://narayanacharya.com/}{\Large Narayan Acharya}} & \href{mailto:narayan.acharya@stonybrook.edu}{narayan.acharya@stonybrook.edu}\\
+		\href{https://narayanacharya.com/}{https://narayanacharya.com/} & +1-631-307-6395 \\
+	\end{tabular*}
+	
+	
+	%-----------EDUCATION-----------------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{State University of New York}{Stony Brook, NY}
+	{Master of Science in Computer Science (Data Science, Computer Vision, NLP, Algorithms)}{Aug 2019 -- Present}
+	\resumeSubheading
+	{KJ Somaiya College of Engineering (KJSCE), University of Mumbai}{Mumbai, India}
+	{Bachelor of Engineering in Information Technology; Agg: 72.9\%}{Aug 2011 -- May 2015}
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------PREOFESSIONAL EXPERIENCE-----------------
+	\section{Professional Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{JP Morgan Chase \& Co.}{Mumbai, India}
+	{Application Developer/Associate}{May 2017 - Jul 2019}
+	\resumeItemListStart
+	\resumeItem{Migration to Web UI (REST/WebSockets)}
+	{Re-architected server-side services to support web based user interfaces using streaming architectures for real time data with proxy/ gateway service to route requests from authenticated and authorized users to services in a load-balanced manner.}
+	\resumeItem{Latency Monitoring}
+	{Developed non-intrusive ways to gather, store, visualise and analyse metrics for latency across backend services to identify bottlenecks and performance improvement options.}
+	\resumeItem{Compliance Reporting}
+	{Developed data collection mechanisms to track and compare client portfolio before and after trade, for reporting to compliance teams.}
+	\resumeItem{Database Integration Framework}
+	{Designed and built a generic framework to make database integration and migration to new database technologies.}
+	\resumeItem{Automated Performance Testing}
+	{Set up and implemented automated performance testing processes which were done manually by the development team prior to each release.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{LiveFiesta Pvt. Ltd.}{Mumbai, India}
+	{Lead Android Developer}{Jun 2016 - Jan 2017}
+	\resumeItemListStart
+	\resumeItem{Consumer Application}
+	{Designed and developed Android application for customers to book tickets to various events across the country. Technical features included payment gateway integration, push notifications, deep linking, Google Analytics. Leveraged MVP Architecture pattern along with design principles like dependency injection and others for clean, testable and maintainable code.}
+	\resumeItem{Consumer Application Design}
+	{Designed initial version of the Android application based on extensive research on UI/UX principles, color strategies, iconography and typography.}
+	\resumeItem{Utility Applications}
+	{Developed utility application to redeem tickets for convenient one-time entry to customers. It reduced entry time, shortened queue lengths and cut losses due to ticket duplication and un-tracked re-entrants. Another application tracked delivery of physical tickets. It helped delivery crew with logistics through Google Maps integration and business with auditing of physical tickets.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{TechGenium}{Mumbai, India}
+	{Software Developer \& Partner}{Jun 2015 and May 2016}
+	
+	\vspace{2mm}
+	Developed mobile and web-based products addressing specific needs of small and medium scale businesses. % Undertook project management responsibilities that included tasks like requirements analysis, project draft and proposal and tracking project timelines and deadlines. Actively involved in team building, interviewing candidates for design and technology roles and training new hires and mentoring interns. %
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------TECHNING EXPERIENCE-----------------
+	\section{Teaching Experience}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Computer Science Department, Stony Brook University}{Mumbai, India}
+	{Teaching Assistant for CSE-216 Programming Abstractions, Prof. Ritwik Banerjee}{Sep 2019 -- Present}
+	\resumeSubheading
+	{Department of Information Technology, KJSCE}{Mumbai, India}
+	{Seminar on 'Introduction to Spring Framework}{Mar 2019}
+	\resumeSubheading
+	{Riidl (Research Innovation Incubation Design Labs)}{Mumbai, India}
+	{Android App Development Course in collaboration with Riidl}{Jul 2015 -- Aug 2015}
+	\resumeSubheading
+	{Department of Information Technology, KJSCE}{Mumbai, India}
+	{Lectures for course 'Open Source Mobile Programming: Android'}{Oct 2014}
+	\resumeSubheading
+	{Computer Society of India, KJSCE}{Mumbai, India}
+	{Technical workshops on Open Source OS (Ubuntu), Android \& Web Development}{Aug 2013 -- Jun 2014}
+	\resumeSubHeadingListEnd
+	
+	
+	
+	
+	%-----------PROJECTS AND ACHIEVEMENTS-----------------
+	\section{Projects \& Achievements}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Physual (Capstone Project)}
+	{Application gave insights into generating a 3D scene for visualising Newtonian Mechanics Problems using NLP. Came in 3rd in state level competition Prakalpa 2015 and 2nd in Tatva (2015) for presenting associated research paper.}
+	\resumeSubItem{Smart Home Solution}
+	{Android application to control electrical appliances remotely over the internet. Project was done in collaboration with students from Electronics department. Received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
+	\resumeSubItem{HoldingWilley (iOS App)}
+	{Developed iOS app for Kustard Technologies Pvt. Ltd. that fetches real time scores for cricket matches around the globe and shows ball by ball updates, full score card and  commentary.}
+	\resumeSubItem{GATE}
+	{Stood 923rd (top 1\%) in national level exam, Graduate Aptitude Test in Engineering (2015), among more than 115,000 students in Computer Science.}
+	\resumeSubItem{MOOCs}
+	{Completed a specialization in Mathematics for Machine Learning and courses on Python Fundamentals, Interactive Programming in Python, Game Programming in C\# and Android Programming.}
+	% \resumeSubItem{Academic Excellence} %
+	%  {Among top 10 students in department during undergrad and $ subject topper for courses 'Programming for Mobile \& Remote Computers', 'Object Oriented Analysis \& Design' \&  'Simulation \& Modeling'.} %
+	\resumeSubItem{Extra-Curricular Activities}
+	{Served as Joint General Secretary for Computer Society of India, KJSCE (2013-14) and was responsible for organizing and delivering workshops and events for students.}
+	\resumeSubHeadingListEnd
+	
+	
+	%--------PROGRAMMING SKILLS------------
+	\section{Technical Skills}
+	\resumeSubHeadingListStart
 	\item{
-      \textbf{Database Technologies}{: MongoDB, SQLite, MySQL}}
-  \vspace{-8pt}
+		\textbf{Programming Languages}{: Proficient in Java \& Python and experience with Swift, C, C++, C\#, HTML, CSS, JS}}
+	\vspace{-8pt}
 	\item{
-	  \textbf{Frameworks \& Tools}{: Spring, Android, iOS, Flask, Angular, \LaTeX, Kafka, Zookeeper, Gradle, Maven, Elastic, Kibana, Git}}
-  \resumeSubHeadingListEnd
-
-
-%-------------------------------------------
+		\textbf{Database Technologies}{: MongoDB, SQLite, MySQL}}
+	\vspace{-8pt}
+	\item{
+		\textbf{Frameworks \& Tools}{: Spring, Android, iOS, Jupyter Notebooks, Angular, \LaTeX, Kafka, Zookeeper, Gradle, Maven, Elastic, Logstash, Kibana, Git}}
+	\resumeSubHeadingListEnd
+	
+	
+	%-------------------------------------------
 \end{document}
