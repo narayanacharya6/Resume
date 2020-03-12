@@ -29,8 +29,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.75in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.85in}
+\addtolength{\textheight}{1.7in}
 
 \urlstyle{same}
 
@@ -91,15 +91,15 @@
 	
 	
 	%-----------EDUCATION-----------------
-	\section{Education}
+	\section{\faGraduationCap \space Education}
 	\resumeSubHeadingListStart
 	\resumeSubheading
 	{Stony Brook University}{Stony Brook, NY}
 	{Master of Science in Computer Science, Graduating Dec 2020, GPA: 3.8/4.0}{Aug 2019 -- \textbf{Present}}
 	\resumeSubHeadingListStart
-	\item {Teaching Assistant for undergraduate course - \textit{Programming Abstractions} (Fall '19).}
+	\item {Teaching Assistant: Programming Abstractions (Fall '19), Software Engineering (Spring '20).}
 	\vspace{-1pt}
-	\item{Courses: Data Science, Computer Vision, NLP, Algorithms, Big Data, Probability \& Stats.}
+	\item{Data Science, Natural Language Processing, Computer Vision, Big Data Analytics, Probability \& Statistics.}
 	\vspace{-6pt}
 	%\item  {Course Work -}
 	%\textit{NLP:} Detecting toxicity in online conversations using Deep Learning, Relationship Extraction using Neural Nets, Sentiment Analysis, \textit{Data Science:} Predicting Elo ratings of Chess players, \textit{Computer Vision:} Action Recognition using LSTM, Pose Estimation, Scene Recognition using CNN.
@@ -126,8 +126,48 @@
 	%{}
 	%\resumeSubHeadingListEnd
 	
+		%-----------PROJECTS AND ACHIEVEMENTS-----------------
+	\section{\faFlask \space Projects}
+	\resumeSubHeadingListStart
+	% \resumeSubItem{Physual (Capstone Project)}
+	% {Application generated a 3D scene for visualising Newtonian Mechanics Problems using NLP. Came in 3rd in state level competition Prakalpa 2015 and 2nd in Tatva (2015) for presenting associated research paper.}
+	% \resumeSubItemText{Published \textit{Visualization of Mechanics Problems based on Natural Language Processing} in International Journal of Computer Applications (2015).}
+	\resumeSubItem{Comment Toxicity Detection}{Compared use of GloVE \& fastText word embeddings on multi-class classification of toxicity levels in Wikipedia comments. Using Bi-GRU \& BERT achieved an AUC of 0.98+. }
+	\resumeSubItem{Chess Rating Prediction}{Used regression techniques like Random Forests and Gradient Boosting over novel features extracted from moves played in 100k Chess games to predict Elo ratings. Complex feature extraction run on distributed compute nodes in parallel using OpenMP API for 15 times faster processing.}
+	\resumeSubItem{Sentence Representation}{Understanding sentence representations using Perturbation Analysis on sentiment analysis task with IMDb movie reviews using DAN and GRU.}
+	\resumeSubItem{Word Embeddings}{Compared embeddings learnt using Cross Entropy v/s Noise Contrastive Estimation Loss by measuring their performance on the word analogy task.}
+	\resumeSubItem{Video Action Classification}{Compared LSTM v/s SVM for action classification task on the UCF101 data. Used Transfer Learning to compute features for 60000 video frames with limited compute resources.}
+	% \resumeSubItemText{Relation Extraction on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
+	% \resumeSubItemText{Using Deep Learning and Transfer Learning on CNN-based models for scene recognition with 89\% accuracy.}
+	\resumeSubItem{Pose Estimation}{Estimated 3D pose co-ordinates of humans by regressing over their known 2D co-ordinates using Neural Networks on the Human36M dataset.}
+	\resumeSubItem{\href{https://apps.apple.com/app/id1229976116}{HoldingWilley \faApple}}{An iOS app for displaying real-time scores, stats \& analysis of cricket matches.}
+	% {Developed iOS app for Kustard Technologies Pvt. Ltd. that fetches real time scores for cricket matches around the globe and shows ball by ball updates, full score card and  commentary.}
+	%{Developed iOS app for Kustard Technologies Pvt. Ltd. for real time scores of cricket matches. App developed in under 1 month with no prior experience of the iOS framework.}
+	
+	%\resumeSubItem{Smart Home Solution \faAndroid}
+	%{Android application to control electrical appliances remotely over the internet received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
+	\resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub}}{An open-source Android/Java library for drawing and animating sinusoidal waves.}
+	%\resumeSubItemText{Ranked top 1\% in India in Graduate Aptitude Test in Engineering (2015) exam organized by IIT \& IISc.}% among more than 115,000 students in Computer Science.}
+	%\resumeSubItem{Course Projects}
+	%{\textit{NLP:} Detecting toxicity in online conversations using Deep Learning, Relationship Extraction, Sentiment Analysis, \textit{Data Science:} Predicting Elo ratings of Chess players using play-by-play moves, \textit{Computer Vision:} Action Recognition using LSTM, Pose Estimation, Scene Recognition.}
+	%\resumeSubItem{MOOCs}
+	%{Mathematics for Machine Learning, Interactive Programming in Python, Game Dev in C\#.}
+	% \resumeSubItem{Academic Excellence} %
+	%  {Among top 10 students in department during undergrad and $ subject topper for courses 'Programming for Mobile \& Remote Computers', 'Object Oriented Analysis \& Design' \&  'Simulation \& Modeling'.} %
+	% \resumeSubItem{Extra-Curricular Activities}
+	% {Served as Joint General Secretary for Computer Society of India, KJSCE (2013-14) and was responsible for organizing and delivering workshops and events for students.}
+	\resumeSubHeadingListEnd
+	
+		%-----------PUBLICATIONS-----------------
+	\section{\faBookmark \space Publication}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Visualization of Mechanics Problems based on Natural Language Processing}{}
+	{International Journal of Computer Applications}{Apr 2015}
+	\resumeSubHeadingListEnd
+	
 	%-----------EXPERIENCE-----------------
-	\section{Professional Experience}
+	\section{\faBriefcase \space Professional Experience}
 	\resumeSubHeadingListStart
 	
 	%\resumeSubheading
@@ -138,7 +178,7 @@
 	{JP Morgan Chase \& Co.}{Mumbai, India}
 	{Associate (Software Engineer)}{May 2017 -- Jul 2019}
 	\resumeSubHeadingListStart
-	\item{Re-architected server-side services to support web-based UI \& streaming real-time data using WebSockets. Improved performance reducing payload sizes ($\sim$70\% smaller) \& boosted reliability using micro-services.}
+	\item{Redesigned server-side services to support web-based client \& streaming real-time data using WebSockets. Improved performance using $\sim$70\% smaller payloads \& boosted reliability using micro-services architecture}
 	%\resumeItem{Latency Monitoring}
 	%\item{Developed non-intrusive ways to gather, store, visualize and analyze metrics using ElasticSearch, Logstash \& Kibana for latency across micro-services to identify bottlenecks and performance improvement options.}
 	%\resumeItem{Compliance Reporting}
@@ -169,14 +209,6 @@
 	
 	\resumeSubHeadingListEnd
 	
-	%-----------PUBLICATIONS-----------------
-	\section{Publication}
-	\resumeSubHeadingListStart
-	\resumeSubheading
-	{Visualization of Mechanics Problems based on Natural Language Processing}{}
-	{International Journal of Computer Applications}{Apr 2015}
-	\resumeSubHeadingListEnd
-	
 	%-----------TEACHING EXPERIENCE-----------------
 	% \section{Prior Teaching Experience}
 	% \resumeSubHeadingListStart
@@ -192,42 +224,10 @@
 	% \resumeSubheading
 	% {Computer Society of India, KJSCE}{Mumbai, India}
 	% {Technical workshops on Open Source OS (Ubuntu), Android \& Web % Development}{Aug 2013 -- Jun 2014}
-	% \resumeSubHeadingListEnd
-	
-	%-----------PROJECTS AND ACHIEVEMENTS-----------------
-	\section{Projects \& Achievements}
-	\resumeSubHeadingListStart
-	% \resumeSubItem{Physual (Capstone Project)}
-	% {Application generated a 3D scene for visualising Newtonian Mechanics Problems using NLP. Came in 3rd in state level competition Prakalpa 2015 and 2nd in Tatva (2015) for presenting associated research paper.}
-	% \resumeSubItemText{Published \textit{Visualization of Mechanics Problems based on Natural Language Processing} in International Journal of Computer Applications (2015).}
-	\resumeSubItem{Elo Rating Prediction}{Used regression techniques over novel features extracted from 100k Chess games. Feature extraction run on multiple compute nodes in parallel using Open MPI for 15 times faster processing.}
-	\resumeSubItem{Comment Toxicity Detection}{Detected 6 levels of toxicity in Wikipedia comments using Bi-GRU \& BERT with an AUC of 0.98+. Compared use of different word embeddings and pre-processing techniques.}
-	\resumeSubItem{Video Action Classification}{Compared LSTM v/s SVM on the action classification task on the UCF101 dataset. Computed features for 60000 frames with limited compute resources \& achieved an accuracy of 85\%.}
-	\resumeSubItemText{Relation Extraction on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
-	\resumeSubItemText{Sentiment analysis on IMDb movie reviews using DAN and GRU evaluated using Perturbation Analysis.}
-	\resumeSubItemText{Using Deep Learning and Transfer Learning on CNN-based models for scene recognition with 89\% accuracy.}
-	\resumeSubItemText{3D Pose Estimation from action and 2D co-ordinates using Neural Networks on the Human36M dataset.}
-	\resumeSubItem{\href{https://apps.apple.com/app/id1229976116}{HoldingWilley \faApple}}{An iOS app for displaying real-time scores, stats \& analysis of cricket matches.}
-	% {Developed iOS app for Kustard Technologies Pvt. Ltd. that fetches real time scores for cricket matches around the globe and shows ball by ball updates, full score card and  commentary.}
-	%{Developed iOS app for Kustard Technologies Pvt. Ltd. for real time scores of cricket matches. App developed in under 1 month with no prior experience of the iOS framework.}
-	
-	%\resumeSubItem{Smart Home Solution \faAndroid}
-	%{Android application to control electrical appliances remotely over the internet received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
-	\resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub}}{An open-source Android/Java library for drawing and animating sinusoidal waves.}
-	%\resumeSubItemText{Ranked top 1\% in India in Graduate Aptitude Test in Engineering (2015) exam organized by IIT \& IISc.}% among more than 115,000 students in Computer Science.}
-	%\resumeSubItem{Course Projects}
-	%{\textit{NLP:} Detecting toxicity in online conversations using Deep Learning, Relationship Extraction, Sentiment Analysis, \textit{Data Science:} Predicting Elo ratings of Chess players using play-by-play moves, \textit{Computer Vision:} Action Recognition using LSTM, Pose Estimation, Scene Recognition.}
-	%\resumeSubItem{MOOCs}
-	%{Mathematics for Machine Learning, Interactive Programming in Python, Game Dev in C\#.}
-	% \resumeSubItem{Academic Excellence} %
-	%  {Among top 10 students in department during undergrad and $ subject topper for courses 'Programming for Mobile \& Remote Computers', 'Object Oriented Analysis \& Design' \&  'Simulation \& Modeling'.} %
-	% \resumeSubItem{Extra-Curricular Activities}
-	% {Served as Joint General Secretary for Computer Society of India, KJSCE (2013-14) and was responsible for organizing and delivering workshops and events for students.}
-	\resumeSubHeadingListEnd
-	
+	% \resumeSubHeadingListEnd	
 	
 	%--------PROGRAMMING SKILLS------------
-	\section{Technical Skills}
+	\section{\faBolt \space Technical Skills}
 	\resumeSubHeadingListStart
 	\item{
 		\textbf{Languages}{: Proficient in Python \& Java, experience with Swift, C, C++, HTML, CSS, JS, SQL}}
