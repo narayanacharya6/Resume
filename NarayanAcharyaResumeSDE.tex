@@ -75,13 +75,12 @@
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{0pt}}
 \newcommand{\resumeSubItemText}[1]{\resumeItemText{#1}\vspace{0pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=\hoffset]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=$\circ$,leftmargin=\hoffset]}
 	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=\hoffset]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\circ$,leftmargin=\hoffset]}
 	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\renewcommand{\labelitemii}{$\circ$}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -213,11 +212,11 @@
 	%{Android application to control electrical appliances remotely over the internet received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
 	\resumeSubItem{Chess Rating Prediction}{Used Random Forests, Gradient Boosting over novel features extracted from moves in 100k chess games to predict Elo ratings. Feature extraction run on distributed nodes using OpenMP for 15x processing speed.}
 	\resumeSubItem{Understanding Infant Mortality}{Applied Linear Regression using Dask, MapReduce \& Spark to suggest priority actions for districts to reduce Infant Mortality Rate based on 3 million (16.8GB) health \& social records of women.}
-	\resumeSubItem{Comment Toxicity Detection}{Achieved an AUC score of 0.98+ with creative pre-processing techniques coupled with Bi-GRU \& BERT for multi-class classification of toxicity levels in Wikipedia comments. }
+	\resumeSubItem{Comment Toxicity Detection}{Achieved an AUC score of 0.98+ with creative pre-processing techniques coupled with Bi-GRU \& BERT for multi-label classification of toxicity levels in Wikipedia comments. }
 	\resumeSubItem{Video Action Classification}{Compared LSTM v/s SVM for action classification task on the UCF101 dataset. Leveraged Transfer Learning to compute features for 60000 video frames with limited compute resources.}
 	\resumeSubItem{3D Pose Estimation}{Estimated 3D pose co-ordinates of humans by regressing over their 2D co-ordinates using DNNs.}
-	\resumeSubItem{Relation Extraction}{Extracted entity relations on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
 	\resumeSubItem{Scene Classification}{Classified scenes using Transfer Learning \& Convolutional Neural Networks with 89\% accuracy.}
+	\resumeSubItem{Relation Extraction}{Extracted entity relations on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
 	% \resumeSubItem{COVID-19 Statitical Analysis}{Studied trends for the state of Massachusetts and its correlation with air pollution.}
 	% \resumeSubItemText{Relation Extraction on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
 	%\resumeSubItem{Scene Recognition}{Leveraged Deep Learning coupled with Transfer Learning using CNN-based models for scene recognition with 89\% accuracy.}
