@@ -62,24 +62,24 @@
 	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & \textit{\small#2} \\
 		 \textit{\small#3} & \textit{\small #4} \\
-	\end{tabular*}\vspace{-4pt}
+	\end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
 	\vspace{2pt}\item[]
 	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textbf{#1}, \textit{\small#3} (\textit{\small#2}) & \textit{\small #4} \\
-	\end{tabular*}\vspace{-4pt}
+		\textbf{#1}, \textit{\small#3} \textit{\small#2} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-2pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
-\newcommand{\resumeSubItemText}[1]{\resumeItemText{#1}\vspace{-2pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{0pt}}
+\newcommand{\resumeSubItemText}[1]{\resumeItemText{#1}\vspace{0pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=\hoffset]}
 	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=\hoffset]}
 	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 
@@ -94,7 +94,7 @@
 		\vspace{4pt}
 		\textbf{\href{http://bit.ly/36dHrz9}{\Large Narayan Acharya}} & \href{mailto:narayan.acharya@stonybrook.edu}{narayan.acharya@stonybrook.edu}\\
 		%\href{https://narayanacharya.com/}{https://narayanacharya.com}
-		\href{http://bit.ly/367k8qR}{\faGithub/narayanacharya6}\quad\href{http://bit.ly/2SEX3b9}{\faLinkedin/narayan-acharya}\quad\href{http://bit.ly/36dHrz9}{\faGlobe/narayanacharya.com} & +1 (631) 307 6395
+		\href{http://bit.ly/367k8qR}{\faGithub/narayanacharya6}\quad\href{http://bit.ly/2SEX3b9}{\faLinkedin/in/narayan-acharya}\quad\href{http://bit.ly/36dHrz9}{\faGlobe/narayanacharya.com} & +1 (631) 307 6395
 	\end{tabular*}
 	
 	
@@ -143,7 +143,7 @@
 	%{Teaching Assistant for course Programming Abstractions, \href{http://www3.cs.stonybrook.edu/~rbanerjee/}{Prof. Ritwik Banerjee}}{Sep 2019 -- \textbf{Present}}
 
 	\resumeSubheading
-	{PlayStation}{New York, USA}
+	{PlayStation}{}
 	{Software Engineer Intern}{May 2020 -- Aug 2020}
 	\resumeSubHeadingListStart
 	\item{Built Deep Learning pipeline to improve perceived quality of video by enhancing regions with text. Reduced inference time by $\sim$75\% for text detection under challenging constraints without compromising on precision \& recall.}
@@ -152,21 +152,21 @@
 	\resumeSubHeadingListEnd
 		
 	\resumeSubheading
-	{JP Morgan Chase \& Co.}{Mumbai, India}
+	{JP Morgan Chase \& Co.}{}
 	{Associate Software Engineer}{May 2017 -- Jul 2019}
 	\resumeSubHeadingListStart
 	\item{Redesigned server-side services to support web-based client \& streaming of real-time data using WebSockets. Improved app performance via $\sim$70\%  reduction in payload size \& boosted reliability using micro-services architecture with Spring Cloud.}
-	\item{Developed non-intrusive ways to gather, store, visualize and analyze metrics using Elastic, Logstash \& Kibana for latency, in the order of 100ms, across micro-services to identify bottlenecks and performance improvement options.}
+	\item{Developed non-intrusive ways to gather, store, visualize and analyze metrics using Elasticsearch, Logstash \& Kibana for latency, in the order of 100ms, across micro-services to identify bottlenecks and performance improvement options.}
 	%\resumeItem{Compliance Reporting}
 	\item{Optimized data collection mechanisms using REST APIs to track and compare client portfolio pre \& post trades. This was used by compliance teams to generate risk reports on demand, increasing granularity in understanding firm's risk exposure.}
 	%\resumeItem{Database Integration Framework}
-	% \item{Designed a generic framework to make database integration and migration to new database technologies easier \& faster.}
+	\item{Designed a generic framework to make database integration and migration to new database technologies easier \& faster.}
 	\item{Saved 4 man-hours/release cycle by automating pre-release performance testing using in-house CI/CD and build tools.}
 	\vspace{-2mm}
 	\resumeSubHeadingListEnd
 	
 	\resumeSubheading
-	{LiveFiesta}{Mumbai, India}
+	{LiveFiesta}{}
 	{Lead Android Developer}{Jun 2016 -- Jan 2017}
 	\resumeSubHeadingListStart
 	\item
@@ -179,10 +179,10 @@
 	\resumeSubHeadingListEnd
 	
 	\resumeSubheading
-	{TechGenium\vspace{8pt}}{Mumbai, India}
+	{TechGenium\vspace{8pt}}{}
 	{Software Developer \& Partner}{Jun 2015 -- May 2016}
-	Undertook development of multiple mobile and web-based products addressing specific needs of small and medium scale businesses.  Actively involved in team building, interviewing for design \& technology roles, mentoring new hires \& interns. %
-	\vspace{-4pt}
+	% Undertook development of multiple mobile and web-based products addressing specific needs of small and medium scale businesses.  Actively involved in team building, interviewing for design \& technology roles, mentoring new hires \& interns. %
+	\vspace{-16pt}
 	\resumeSubHeadingListEnd
 	
 	%-----------TEACHING EXPERIENCE-----------------
@@ -212,10 +212,13 @@
 	%\resumeSubItem{Smart Home Solution \faAndroid}
 	%{Android application to control electrical appliances remotely over the internet received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
 	\resumeSubItem{Chess Rating Prediction}{Used Random Forests, Gradient Boosting over novel features extracted from moves in 100k chess games to predict Elo ratings. Feature extraction run on distributed nodes using OpenMP for 15x processing speed.}
-	\resumeSubItem{Understanding Infant Mortality}{Applied Linear Regression to suggest priority actions to reduce Infant Mortality Rate based on 16.8GB of health \& social records of 3M women using Dask \& Apache Spark for parallel computation.}
+	\resumeSubItem{Understanding Infant Mortality}{Applied Linear Regression using Dask, MapReduce \& Spark to suggest priority actions for districts to reduce Infant Mortality Rate based on 3 million (16.8GB) health \& social records of women.}
 	\resumeSubItem{Comment Toxicity Detection}{Achieved an AUC score of 0.98+ with creative pre-processing techniques coupled with Bi-GRU \& BERT for multi-class classification of toxicity levels in Wikipedia comments. }
 	\resumeSubItem{Video Action Classification}{Compared LSTM v/s SVM for action classification task on the UCF101 dataset. Leveraged Transfer Learning to compute features for 60000 video frames with limited compute resources.}
-	\resumeSubItem{COVID-19 Statitical Analysis}{Studied trends for the state of Massachusetts and its correlation with air pollution.}
+	\resumeSubItem{3D Pose Estimation}{Estimated 3D pose co-ordinates of humans by regressing over their 2D co-ordinates using DNNs.}
+	\resumeSubItem{Relation Extraction}{Extracted entity relations on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
+	\resumeSubItem{Scene Classification}{Classified scenes using Transfer Learning \& Convolutional Neural Networks with 89\% accuracy.}
+	% \resumeSubItem{COVID-19 Statitical Analysis}{Studied trends for the state of Massachusetts and its correlation with air pollution.}
 	% \resumeSubItemText{Relation Extraction on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
 	%\resumeSubItem{Scene Recognition}{Leveraged Deep Learning coupled with Transfer Learning using CNN-based models for scene recognition with 89\% accuracy.}
 	% \resumeSubItem{Sentence Representations}{Understanding sentence representations using Perturbation Analysis on sentiment analysis task with IMDb movie reviews using neural networks DAN and GRU.}
@@ -233,7 +236,7 @@
 	\resumeSubItem{\href{https://apps.apple.com/app/id1229976116}{HoldingWilley \faApple}}{Built iOS app for displaying real-time scores, stats \& analysis of live cricket matches in under 30 days.}
 	% {Developed iOS app for Kustard Technologies Pvt. Ltd. that fetches real time scores for cricket matches around the globe and shows ball by ball updates, full score card and  commentary.}
 	%{Developed iOS app for Kustard Technologies Pvt. Ltd. for real time scores of cricket matches. App developed in under 1 month with no prior experience of the iOS framework.}
-	\resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub \space \faAndroid}}{Created Android/Java library for rendering and animating sinusoidal waves with 10k+ downloads.}
+	\resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub \space \faAndroid}}{Created Android/Java library for rendering/animating sinusoidal waves with 10k+ downloads.}
 	\resumeSubHeadingListEnd
 	
 	%-----------PUBLICATIONS-----------------
@@ -248,10 +251,10 @@
 	\section{\faBolt \space Technical Skills}
 	\resumeSubHeadingListStart
 	\item{
-		\textbf{Languages \& DB}{: Python \& Java (Proficient), C \& C++ (Familiar), SQL, NoSQL, MongoDB}}
+		\textbf{Languages}{: Proficient in Python \& Java, Familiar with C \& C++, JavaScript, Swift, SQL}}
 	\vspace{-4pt}
 	\item{
-		\textbf{Frameworks \& Libraries}{: Spring, Android, iOS, Flask, TensorFlow, Keras, PyTorch, scikit-learn, Spark, Kafka}}
+		\textbf{Frameworks \& Libraries}{: Spring, Android, iOS, Flask, TensorFlow, Keras, PyTorch, scikit-learn, NumPy, pandas, Hadoop, Dask, Spark, MapReduce, Kafka, Docker, Kubernetes, NoSQL, MongoDB}}
 	\vspace{-4pt}
 	\item{
 		\textbf{Build Tools}{: Git, Gradle, Maven, Jenkins, Bash, Linux Shell Scripting.}}
