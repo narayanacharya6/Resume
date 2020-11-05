@@ -26,11 +26,12 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.85in}
-\addtolength{\textheight}{2.0in}
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1in}
+
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -145,8 +146,9 @@
 	{PlayStation}{}
 	{Software Engineer Intern}{May 2020 -- Aug 2020}
 	\resumeSubHeadingListStart
-	\item{Built Deep Learning pipeline to improve perceived quality of video by enhancing regions with text. Reduced inference time by $\sim$75\% for text detection under challenging constraints without compromising on precision \& recall.}
-	\item{Developed a web-based tool using Flask, HTML \& JavaScript, to help identify incorrect annotations leading to an increase in precision \& recall of text detection by 1-2\%.}
+	\item{Built Deep Learning pipeline to improve perceived video quality by enhancing regions with text. Reduced inference time by $\sim$75\% for text detection under challenging constraints without reducing precision \& recall.}
+	\item{Evaluated multiple lightweight backbone networks, ResNet, PVANet, MobileNetV2, and techniques like quanitzation, post-processing optimization to further improve inference speed by 2x-4x.}
+	\item{Developed a web dashboard using Flask, HTML \& JavaScript, to help identify incorrect annotations which helped increase precision \& recall of text detection by 1-2\%.}
 	\vspace{-2mm}
 	\resumeSubHeadingListEnd
 		
@@ -154,13 +156,11 @@
 	{JP Morgan Chase \& Co.}{}
 	{Associate Software Engineer}{May 2017 -- Jul 2019}
 	\resumeSubHeadingListStart
-	\item{Redesigned server-side services to support web-based client \& streaming of real-time data using WebSockets. Improved app performance via $\sim$70\%  reduction in payload size \& boosted reliability using micro-services architecture with Spring Cloud.}
-	\item{Developed non-intrusive ways to gather, store, visualize and analyze metrics using Elasticsearch, Logstash \& Kibana for latency, in the order of 100ms, across micro-services to identify bottlenecks and performance improvement options.}
-	%\resumeItem{Compliance Reporting}
-	\item{Optimized data collection mechanisms using REST APIs to track and compare client portfolio pre \& post trades. This was used by compliance teams to generate risk reports on demand, increasing granularity in understanding firm's risk exposure.}
-	%\resumeItem{Database Integration Framework}
-	\item{Designed a generic framework to make database integration and migration to new database technologies easier \& faster.}
-	\item{Saved 4 man-hours/release cycle by automating pre-release performance testing using in-house CI/CD and build tools.}
+	\item{Redesigned server-side services to support Angular client \& streaming of real-time data using WebSockets. Improved app performance with $\sim$70\%  reduction in payload \& boosted reliability using micro-services architecture with Spring Cloud.}
+	\item{Developed non-intrusive ways to gather, store, visualize and analyze latency metrics using Elasticsearch, Logstash \& Kibana, in the order of 100ms, across micro-services to identify bottlenecks in high throughput services.}
+	\item{Optimized data collection mechanisms using REST APIs to track and compare client portfolio pre \& post trade to generate risk reports on demand, increasing granularity in understanding firm's risk exposure.}
+	\item{Designed a generic framework for database migration efforts to aid transition from PostgreSQL to MongoDB.}
+	\item{Automated pre-release performance tests using in-house CI/CD \& build tools saving man-hours across teams.}
 	\vspace{-2mm}
 	\resumeSubHeadingListEnd
 	
@@ -169,8 +169,8 @@
 	{Lead Android Developer}{Jun 2016 -- Jan 2017}
 	\resumeSubHeadingListStart
 	\item
-	{Led a team of 4 in the design \& development of an Android application with an average rating of 4.5+ for customers to book tickets to events. Leveraged MVP architecture, Dependency Injection \& TDD using RxJava, Dagger \& Espresso.} % Technical features included payment gateway integration, push notifications, deep linking, Google Analytics.} %Leveraged MVP Architecture pattern along with design principles like dependency injection and others for clean, testable and maintainable code.}
-	\item{Reduced customer entry time to events by 50\%, shortened queue lengths \& cut losses due to fake ticket duplication \& untracked re-entrants by developing a utility Android application to redeem tickets and track entrants.} 
+	{Led a team of 4 in the design \& development of an Android application (rating 4.5+) for users to book tickets to events. Leveraged MVP architecture, Dependency Injection \& TDD using RxJava, Dagger \& Espresso.} % Technical features included payment gateway integration, push notifications, deep linking, Google Analytics.} %Leveraged MVP Architecture pattern along with design principles like dependency injection and others for clean, testable and maintainable code.}
+	\item{Reduced customer entry time to events by 50\%, shortened queue lengths \& cut losses due to fake ticket duplication \& untracked re-entrants by developing a utility Android application to redeem tickets.} 
 	%\item{Helped delivery crew \& business with logistics of physical tickets by developing app using Google Maps integration for tracking \& auditing.}
 	%\resumeItem{App Design}
 	%\item{Designed initial versions of the app using UI/UX principles, iconography, \& typography and later led the design team.}
@@ -180,7 +180,7 @@
 	\resumeSubheading
 	{TechGenium\vspace{8pt}}{}
 	{Software Developer \& Partner}{Jun 2015 -- May 2016}
-	% Undertook development of multiple mobile and web-based products addressing specific needs of small and medium scale businesses.  Actively involved in team building, interviewing for design \& technology roles, mentoring new hires \& interns. %
+	% Undertook development of mobile and web-based products addressing specific needs of small \& medium scale businesses.  Actively involved in team building, interviewing for technology roles, mentoring new hires \& interns.
 	\vspace{-16pt}
 	\resumeSubHeadingListEnd
 	
@@ -212,7 +212,7 @@
 	%{Android application to control electrical appliances remotely over the internet received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
 	\resumeSubItem{Chess Rating Prediction}{Used Random Forests, Gradient Boosting over novel features extracted from moves in 100k chess games to predict Elo ratings. Feature extraction run on distributed nodes using OpenMP for 15x processing speed.}
 	\resumeSubItem{Understanding Infant Mortality}{Applied Linear Regression using Dask, MapReduce \& Spark to suggest priority actions for districts to reduce Infant Mortality Rate based on 3 million (16.8GB) health \& social records of women.}
-	\resumeSubItem{Comment Toxicity Detection}{Achieved an AUC score of 0.98+ with creative pre-processing techniques coupled with Bi-GRU \& BERT for multi-label classification of toxicity levels in 160k Wikipedia comments and 6 levels of toxicity. }
+	\resumeSubItem{Comment Toxicity Detection}{Achieved an AUC score of 0.98+ with creative pre-processing techniques coupled with Bi-GRU \& BERT for multi-label classification of toxicity levels in 160k Wikipedia comments.}
 	\resumeSubItem{Video Action Classification}{Compared LSTM v/s SVM for action classification task on the UCF101 dataset. Leveraged Transfer Learning to compute features for 60000 video frames with limited compute resources.}
 	% \resumeSubItem{3D Pose Estimation}{Estimated 3D pose co-ordinates of humans by regressing over their 2D co-ordinates only using Deep Neural Networks. Experimented with Kalman Filters for correcting noisy measurements due to faulty sensors.}
 	% \resumeSubItem{Scene Classification}{Classified scenes using Transfer Learning \& CNN with 89\% accuracy.}
@@ -232,10 +232,10 @@
 	%  {Among top 10 students in department during undergrad and $ subject topper for courses 'Programming for Mobile \& Remote Computers', 'Object Oriented Analysis \& Design' \&  'Simulation \& Modeling'.} %
 	% \resumeSubItem{Extra-Curricular Activities}
 	% {Served as Joint General Secretary for Computer Society of India, KJSCE (2013-14) and was responsible for organizing and delivering workshops and events for students.}
-	\resumeSubItem{\href{https://apps.apple.com/app/id1229976116}{HoldingWilley \faApple}}{Built iOS app for displaying real-time scores, stats \& analysis of live cricket matches in under 30 days.}
+	\resumeSubItem{\href{https://apps.apple.com/app/id1229976116}{HoldingWilley \faApple}}{iOS app for displaying real-time scores, stats \& analysis of live cricket matches.}
 	% {Developed iOS app for Kustard Technologies Pvt. Ltd. that fetches real time scores for cricket matches around the globe and shows ball by ball updates, full score card and  commentary.}
 	%{Developed iOS app for Kustard Technologies Pvt. Ltd. for real time scores of cricket matches. App developed in under 1 month with no prior experience of the iOS framework.}
-	\resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub \space \faAndroid}}{Created Android/Java library for rendering/animating sinusoidal waves with 10k+ downloads.}
+	\resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub \space \faAndroid}}{Android/Java library for rendering/animating sinusoidal waves with 10k+ downloads.}
 	\resumeSubHeadingListEnd
 	
 	%-----------PUBLICATIONS-----------------
@@ -258,10 +258,10 @@
 		\textbf{Languages}{: Proficient in Python \& Java, Familiar with C \& C++, JavaScript, Swift, SQL}}
 	\vspace{-4pt}
 	\item{
-		\textbf{Frameworks \& Libraries}{: Spring, Android, iOS, Flask, TensorFlow, PyTorch, scikit-learn, Pandas, Numpy, Kafka, Docker, Kubernetes, Dask, Hadoop, Spark, MySQL, PostgreSQL, MongoDB, Google Cloud Platform}}
+		\textbf{Frameworks \& Libraries}{: Spring, Android, iOS, Flask, TensorFlow, PyTorch, scikit-learn, Pandas, Numpy, Kafka, Docker, Kubernetes, Dask, Hadoop, Spark, MySQL, PostgreSQL, MongoDB}}
 	\vspace{-4pt}
 	\item{
-		\textbf{Build Tools}{: Git, Gradle, Maven, Jenkins, Bash, Linux Shell Scripting}}
+		\textbf{Build Tools}{: Git, Gradle, Maven, Jenkins, Bash, Linux, Google Cloud Platform(GCP)}}
 	\resumeSubHeadingListEnd
 	
 	%\begin{center}
