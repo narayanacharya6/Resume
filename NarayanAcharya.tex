@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex
+% Author : Narayan Acharya
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{brown}\titlerule \vspace{-4pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+	\item\normalsize{
+		\textbf{#1}{: #2}
+	}\vspace{-2pt}
+}
+
+\newcommand{\resumeItemText}[1]{
+	\item\normalsize{
+		{#1}
+	}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubheadingTable}[4]{
+	\vspace{2pt}\item[]
+	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{\small#2} \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{2pt}\item[]
+	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1}, \textit{\small#3} \textit{\small#2} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{0pt}}
+\newcommand{\resumeSubItemText}[1]{\resumeItemText{#1}\vspace{-2pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=\hoffset]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=]}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\vspace{4pt}
+		\textbf{\href{http://bit.ly/36dHrz9}{\Large Narayan Acharya}} & \href{mailto:narayan.acharya@stonybrook.edu}{narayan.acharya@stonybrook.edu}\\
+		%\href{https://narayanacharya.com/}{https://narayanacharya.com}
+		\href{http://bit.ly/367k8qR}{\faGithub/narayanacharya6}\quad\href{http://bit.ly/2SEX3b9}{\faLinkedin/in/narayan-acharya}\quad\href{http://bit.ly/36dHrz9}{\faGlobe/narayanacharya.com} & 6313076395
+	\end{tabular*}
+	
+	
+	%-----------EDUCATION-----------------
+	\section{\faUniversity \space Education}
+	\resumeSubHeadingListStart
+	\resumeSubheadingTable
+	{Stony Brook University}{Stony Brook, NY}
+	{Master of Science in Computer Science, Graduating Dec 2020, GPA: 3.85/4.0}{Aug 2019 -- \textbf{Present}}
+	\resumeSubHeadingListStart
+	\item{Data Science, Natural Language Processing, Computer Vision, Big Data, Probability \& Statistics.}
+	\vspace{-1pt}
+	\item {Teaching Assistant: Programming Abstractions (Fall '19), Software Engineering (Spring '20, Fall '21).}
+	\vspace{-2pt}
+	%\item  {Course Work -}
+	%\textit{NLP:} Detecting toxicity in online conversations using Deep Learning, Relationship Extraction using Neural Nets, Sentiment Analysis, \textit{Data Science:} Predicting Elo ratings of Chess players, \textit{Computer Vision:} Action Recognition using LSTM, Pose Estimation, Scene Recognition using CNN.
+	%\vspace{-2pt}
+	\resumeSubHeadingListEnd
+	
+	\resumeSubheadingTable
+	{University of Mumbai}{Mumbai, India}
+	{Bachelor of Engineering in Information Technology; GPA: 3.9/4.0}{Aug 2011 -- May 2015}
+	\resumeSubHeadingListStart
+	\item{Data Structures \& Algorithms, Discrete Maths, Software Engineering, Data Mining, Operating Systems}
+	\resumeSubHeadingListEnd
+	\vspace{-2pt}
+	\resumeSubHeadingListEnd
+	
+	%-----------RECENT PROJECTS-----------------
+	%\section{Recent Coursework Highlights}
+	%\resumeSubHeadingListStart
+	%\resumeSubItem{Natural Language Processing}
+	%{Sentiment analysis using DAN \& GRU, Dependency Parsing using Neural Nets, Relationship Extraction using GRU \& CNN, Detecting toxicity in comments using Bi-GRU \& BERT.}
+	%\resumeSubItem{Data Science}
+	%{Predicting Elo ratings of Chess players (Capstone), Fraud detection in transactions.}
+	%\resumeSubItem{Computer Vision}
+	%{}
+	%\resumeSubHeadingListEnd
+	
+	
+	%-----------EXPERIENCE-----------------
+	\section{\faBriefcase \space Experience}
+	\resumeSubHeadingListStart
+	
+	%\resumeSubheading
+	%{Computer Science Department, Stony Brook University}{Stony Brook, NY}
+	%{Teaching Assistant for course Programming Abstractions, \href{http://www3.cs.stonybrook.edu/~rbanerjee/}{Prof. Ritwik Banerjee}}{Sep 2019 -- \textbf{Present}}
+	
+	\resumeSubheading
+	{PlayStation}{}
+	{Software Engineer Intern}{May 2020 -- Aug 2020}
+	\resumeSubHeadingListStart
+	\item{Built Deep Learning pipeline to improve perceived video quality by enhancing regions with text. Reduced inference time by $\sim$75\% for text detection under challenging constraints without reducing precision \& recall.}
+	\item{Evaluated multiple lightweight backbone networks, ResNet, PVANet, MobileNetV2, and techniques like quanitzation, post-processing optimization to further improve inference speed by 2x-4x.}
+	\item{Developed a web dashboard using Flask, HTML \& JavaScript, to help identify incorrect annotations which helped increase precision \& recall of text detection by 1-2\%.}
+	\resumeSubHeadingListEnd
+	
+	\resumeSubheading
+	{JP Morgan Chase \& Co.}{}
+	{Associate Software Engineer}{May 2017 -- Jul 2019}
+	\resumeSubHeadingListStart
+	\item{Redesigned server-side services to support Angular client \& streaming of real-time data using WebSockets. Improved app performance with $\sim$70\%  reduction in payload \& boosted reliability using micro-services architecture with Spring Cloud.}
+	\item{Developed non-intrusive ways to gather, visualize and analyze latency metrics using Elasticsearch, Logstash \& Kibana, in the order of 100ms, across micro-services to identify bottlenecks in high throughput services.}
+	\item{Optimized data collection mechanisms using REST APIs to track and compare client portfolio pre \& post trade to generate risk reports on demand, increasing granularity in understanding firm's risk exposure.}
+	\item{Designed a generic framework for database migration efforts to aid transition from PostgreSQL to MongoDB.}
+	\item{Automated pre-release performance tests using CI/CD \& build tools saving man-hours across teams.}
+	\resumeSubHeadingListEnd
+	
+	\resumeSubheading
+	{LiveFiesta}{}
+	{Lead Android Developer}{Jun 2016 -- Jan 2017}
+	\resumeSubHeadingListStart
+	\item
+	{Led a team of 4 in the design \& development of an Android application with an average rating of 4.5+ for customers to book tickets to events. Leveraged MVP architecture, Dependency Injection \& TDD using RxJava, Dagger \& Espresso.}  % Technical features included payment gateway integration, push notifications, deep linking, Google Analytics.} %Leveraged MVP Architecture pattern along with design principles like dependency injection and others for clean, testable and maintainable code.}
+	\item{Reduced customer entry time to events by 50\%, shortened queue lengths \& cut losses due to fake ticket duplication \& untracked re-entrants by developing a utility Android application to redeem tickets and track entrants.} 
+	%\item{Helped delivery crew \& business with logistics of physical tickets by developing app using Google Maps integration for tracking \& auditing.}
+	%\resumeItem{App Design}
+	%\item{Designed initial versions of the app using UI/UX principles, iconography, \& typography and later led the design team.}
+	\resumeSubHeadingListEnd
+	
+	\resumeSubheading
+	{TechGenium\vspace{8pt}}{}
+	{Software Developer \& Partner}{Jun 2015 -- May 2016}
+	% Undertook development of multiple mobile and web-based products addressing specific needs of small and medium scale businesses.  Actively involved in team building, interviewing for design \& technology roles, mentoring new hires \& interns. %
+	\vspace{-8pt}
+	\resumeSubHeadingListEnd
+	
+	%-----------TEACHING EXPERIENCE-----------------
+	% \section{Prior Teaching Experience}
+	% \resumeSubHeadingListStart
+	% \resumeSubheading
+	% {Department of Information Technology, KJSCE}{Mumbai, India}
+	% {Seminar on 'Introduction to Spring Framework}{Mar 2019}
+	% \resumeSubheading
+	% {Riidl (Research Innovation Incubation Design Labs)}{Mumbai, India}
+	% {Android App Development Course in collaboration with Riidl}{Jul 2015 -- Aug 2015}
+	% \resumeSubheading
+	% {Department of Information Technology, KJSCE}{Mumbai, India}
+	%{Lectures for course 'Open Source Mobile Programming: Android'}{Oct 2014}
+	% \resumeSubheading
+	% {Computer Society of India, KJSCE}{Mumbai, India}
+	% {Technical workshops on Open Source OS (Ubuntu), Android \& Web % Development}{Aug 2013 -- Jun 2014}
+	% \resumeSubHeadingListEnd	
+	
+		%-----------PUBLICATIONS-----------------
+	\section{\faGraduationCap \space Publications}
+	\resumeSubHeadingListStart
+	\resumeSubheadingTable
+	{Querying Across Genres for Medical Claims in News}{Nov 2020}
+	{Empirical Methods in Natural Language Processing (EMNLP 2020)}{}
+	% \resumeSubheadingTable
+	% {Visualization of Mechanics Problems based on Natural Language Processing}{Apr 2015}
+	% {International Journal of Computer Applications}{}
+	\vspace{1mm}
+	\resumeSubHeadingListEnd
+	
+	%-----------PROJECTS AND ACHIEVEMENTS-----------------
+	\section{\faFlask \space Projects}
+	\resumeSubHeadingListStart
+	% \resumeSubItem{Physual (Capstone Project)}
+	% {Application generated a 3D scene for visualising Newtonian Mechanics Problems using NLP. Came in 3rd in state level competition Prakalpa 2015 and 2nd in Tatva (2015) for presenting associated research paper.}
+	% \resumeSubItemText{Published \textit{Visualization of Mechanics Problems based on Natural Language Processing} in International Journal of Computer Applications (2015).}
+	
+	%\resumeSubItem{Smart Home Solution \faAndroid}
+	%{Android application to control electrical appliances remotely over the internet received 1st prize under category ‘Sustainable Development‘ at Prakalpa 2014, KJSCE.}
+	\resumeSubItem{Comment Toxicity Detection}{Achieved an AUC score of 0.98+ with creative pre-processing techniques coupled with Bi-GRU \& BERT for multi-class classification of toxicity levels in Wikipedia comments.}
+	\resumeSubItem{Sentence Representations}{Understood sentence representations using Perturbation Analysis on sentiment analysis task with IMDb movie reviews using neural networks, DAN and GRU.}
+	\resumeSubItem{Summarizing Gameplay}{Leveraged Transformers \& NLTK to summarize gameplay comments \& sentiment analysis to inform e-sports players of crowd sentiment as feedback for immersive gameplay experience.}
+	% \resumeSubItem{COVID-19 Statitical Analysis}{Studied trends for the state of Massachusetts and its correlation with air pollution.}
+	% \resumeSubItemText{Relation Extraction on reduced subset of SemEval-2010 Task 8 dataset using GRU and CNN.}
+	\resumeSubItem{Video Action Classification}{Compared LSTM v/s SVM for action classification task on the UCF101 dataset. Leveraged Transfer Learning to compute features for 60000 video frames with limited compute resources.}
+	\resumeSubItem{3D Pose Estimation}{Estimated 3D pose co-ordinates of humans by regressing over their 2D co-ordinates only using Deep Neural Networks. Experimented with Kalman Filters for correcting noisy measurements due to faulty sensors.}
+	\resumeSubItem{Natural Scene Classification}{Classified scenes using Transfer Learning \& Convolutional Neural Networks (AlexNet, VGG) with 89\% accuracy. Used features from pre-trained networks to learn a Linear SVC for the same classification task.}
+	% \resumeSubItem{3D Pose Estimation}{Estimated 3D pose co-ordinates of humans by regressing over their 2D co-ordinates only using Deep Neural Networks. Experimented with Kalman Filters for correcting noisy measurements due to faulty sensors.}
+	% \resumeSubItem{Natural Scene Classification}{Classified scenes using Transfer Learning \& Convolutional Neural Networks (AlexNet, VGG) with 89\% accuracy. Used features from pre-trained networks to learn a Linear SVC for the same classification task.}
+	\resumeSubItem{Chess Rating Prediction}{Evaluated Random Forests, Gradient Boosting over novel features extracted from moves in 100k chess games to predict Elo ratings. Feature extraction run on distributed nodes using OpenMP for 15x speed.}
+	\resumeSubItem{Understanding Infant Mortality}{Applied Linear Regression to suggest priority actions to reduce Infant Mortality Rate based on 16.8GB of health \& social records of 3M women using Dask \& Apache Spark for parallel computation.}
+	\resumeSubItem{\href{https://apps.apple.com/app/id1229976116}{HoldingWilley \faApple}}{iOS app for displaying real-time scores, stats \& analysis of live cricket matches.}
+	\resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub \space \faAndroid}}{Android/Java library for rendering/animating sinusoidal waves with 10k+ downloads.}
+	
+	%\resumeSubItem{Scene Recognition}{Leveraged Deep Learning coupled with Transfer Learning using CNN-based models for scene recognition with 89\% accuracy.}
+	
+	%\resumeSubItem{Pose Estimation}{Estimated 3D pose co-ordinates of humans by regressing over their known 2D co-ordinates using Neural Networks on the Human36M dataset.}
+	% \resumeSubItem{Word Embeddings}{Reported comparisons of word embeddings learnt using Cross Entropy Loss v/s Noise Contrastive Estimation Loss by measuring their performance on the word analogy task.}
+	% \resumeSubItemText{Ranked top 1\% in India in Graduate Aptitude Test in Engineering for Computer Science, a national-level exam organized by Indian Institute of Technology \& Indian Institute of Sciences.}% among more than 115,000 students in Computer Science.}
+	%\resumeSubItem{Course Projects}
+	%{\textit{NLP:} Detecting toxicity in online conversations using Deep Learning, Relationship Extraction, Sentiment Analysis, \textit{Data Science:} Predicting Elo ratings of Chess players using play-by-play moves, \textit{Computer Vision:} Action Recognition using LSTM, Pose Estimation, Scene Recognition.}
+	%\resumeSubItem{MOOCs}
+	%{Mathematics for Machine Learning, Interactive Programming in Python, Game Dev in C\#.}
+	% \resumeSubItem{Academic Excellence} %
+	%  {Among top 10 students in department during undergrad and $ subject topper for courses 'Programming for Mobile \& Remote Computers', 'Object Oriented Analysis \& Design' \&  'Simulation \& Modeling'.} %
+	% \resumeSubItem{Extra-Curricular Activities}
+	% {Served as Joint General Secretary for Computer Society of India, KJSCE (2013-14) and was responsible for organizing and delivering workshops and events for students.}
+	% \resumeSubItem{\href{https://apps.apple.com/app/id1229976116}{HoldingWilley \faApple}}{iOS app for displaying real-time scores, stats \& analysis of live cricket matches.}
+	% {Developed iOS app for Kustard Technologies Pvt. Ltd. that fetches real time scores for cricket matches around the globe and shows ball by ball updates, full score card and  commentary.}
+	%{Developed iOS app for Kustard Technologies Pvt. Ltd. for real time scores of cricket matches. App developed in under 1 month with no prior experience of the iOS framework.}
+	% \resumeSubItem{\href{https://github.com/narayanacharya6/WaveView}{WaveView \faGithub \space \faAndroid}}{Android/Java library for rendering and animating sinusoidal waves with 10k+ downloads.}
+	\resumeSubHeadingListEnd
+	
+	%--------PROGRAMMING SKILLS------------
+	\section{\faBolt \space Technical Skills}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{Languages}{: Proficient in Python \& Java, Familiar with C \& C++, JavaScript, SQL}}
+	\vspace{-2pt}
+	\item{
+		\textbf{Frameworks \& Libraries}{: Spring, Android, iOS, Flask, TensorFlow, PyTorch, scikit-learn, OpenCV, NLTK, Pandas, Numpy, Kafka, Docker, Kubernetes, Dask, Hadoop, Spark, MySQL, PostgreSQL, MongoDB}}
+	\vspace{-2pt}
+	\item{
+		\textbf{Build Tools}{: Git, Gradle, Maven, Jenkins, Bash, Linux, Google Cloud Platform(GCP)}}
+	\resumeSubHeadingListEnd
+	
+	%\begin{center}
+	%	\small This resume was updated last on \today. Latest version can be found at \href{http://bit.ly/358iDar}{\textit{bit.ly/358iDar}}
+	%\end{center}
+	
+	
+	%-------------------------------------------
+\end{document}
